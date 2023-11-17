@@ -15,6 +15,7 @@ const musica = new Audio('sons/luna-rise-part-one.mp3');
 musica.loop = true;
 
 let tempoDecorridoSegundos = 1500;
+
 const startPauseBtn = document.querySelector('#start-pause');
 let intervaloId = null;
 
@@ -90,6 +91,7 @@ function alterarContexto(contexto) {
 
 const contagemRegressiva = () => {
     if (tempoDecorridoSegundos <= 0) {
+        document.dispatchEvent(new Event('TarefaFinalizada'))
         musicaTempoFinalizado.play();
         zerar();
         return

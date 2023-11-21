@@ -1,4 +1,4 @@
-#fokus
+# fokus
 
 Projeto criado durante o curso JavaScript na Web: armazenando dados no navegador, da Alura.
 
